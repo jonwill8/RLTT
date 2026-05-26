@@ -1,0 +1,68 @@
+*.safetensors
+*.pt
+**/rollouts.jsonl
+
+# Log and output files
+*.err
+*.out
+*.json
+*.pdf
+*.png
+*.csv
+
+# Reference PDFs directory
+reference_pdfs/
+
+# Figure output directories
+figs_rltt_vs_grpo/
+figs_rltt_weight-methods_compare/
+
+# Specific experiment directories
+grpo_experiments/grpo_output/3692220/
+grpo_experiments/grpo_output/6246436/
+rltt_experiments/rltt_output/3692225/
+rltt_experiments/rltt_output/3699742/
+rltt_experiments/rltt_output/3699756/
+rltt_experiments/rltt_output/6221068/
+
+# Baseline Qwen3 GRPO output directories
+baselines_qwen3/grpo_output/*/
+
+# All eval_output directories (singular and plural)
+**/eval_output/
+**/eval_outputs/
+
+# Temp model directories
+pass_at_k_results/temp_grpo_3692220_step_140/
+pass_at_k_results/temp_rltt_3692225_step_140/
+repeated_eval_results/temp_grpo_*/
+repeated_eval_results/temp_rltt_*/
+repeated_eval_results_code/temp_grpo_*/
+repeated_eval_results_code/temp_rltt_*/
+repeated_eval_results_non-math/temp_grpo_*/
+repeated_eval_results_non-math/temp_rltt_*/
+
+# Per-loop results
+per_loop_results/grpo/
+per_loop_results/rltt/
+per_loop_results/sft/
+
+# SFT output
+sft_experiments/sft_ouro_math_output/3706435/
+
+# Claude config
+CLAUDE.md
+
+# Rollout comparisons
+rollout_comparisons/*
+!rollout_comparisons/
+!rollout_comparisons/README.md
+!rollout_comparisons/create_both_correct.py
+
+# Pass at k sweep script
+pass_at_k_results/submit_pass_at_k_sweep.sh
+
+# GSNR results subdirs and reports
+gsnr_results/grpo/
+gsnr_results/rltt/
+gsnr_results/gsnr_summary_report_*.txt
